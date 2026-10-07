@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal Bio & Container Dashboard - SENG KOEMNAN (DIT2024172) - CTN" />
+  <title>SENG KOEMNAN | CTN Container Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Ambient Glowing Background Orbs -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <div class="app-container">
+
+    <!-- Top Navigation Bar -->
+    <header class="topbar">
+      <div class="brand-group">
+        <div class="logo-box">
+          <i class="fa-brands fa-docker logo-icon"></i>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">CTN Cloud Node</span>
+          <span class="brand-sub">Docker Container Bio System</span>
+        </div>
+      </div>
+
+      <div class="topbar-status">
+        <div class="status-chip active">
+          <span class="pulse-dot"></span>
+          <span>CONTAINER: <strong>my-bio-site</strong></span>
+        </div>
+        <div class="status-chip">
+          <i class="fa-solid fa-network-wired"></i>
+          <span>PORT: <strong>8080:80</strong></span>
+        </div>
+        <div class="status-chip">
+          <i class="fa-solid fa-server"></i>
+          <span>ENGINE: <strong>nginx:alpine</strong></span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Dashboard Body (Landscape 3-Column / Grid, No Scroll) -->
+    <main class="dashboard-grid">
+
+      <!-- LEFT COLUMN: Profile & Student Credentials -->
+      <section class="dash-card profile-card">
+        <div class="avatar-container">
+          <div class="avatar-ring">
+            <div class="avatar-inner">
+              <span>SK</span>
+            </div>
+          </div>
+          <div class="avatar-badge" title="Active Student">
+            <i class="fa-solid fa-check"></i>
+          </div>
+        </div>
+
+        <div class="profile-meta">
+          <h1 class="student-name">SENG KOEMNAN</h1>
+          <p class="student-role">DevOps Aspirant &middot; IT Specialist</p>
+        </div>
+
+        <div class="tag-cloud">
+          <span class="pill-tag"><i class="fa-solid fa-terminal"></i> CTN Student</span>
+          <span class="pill-tag"><i class="fa-brands fa-docker"></i> Container Tech</span>
+          <span class="pill-tag"><i class="fa-solid fa-cloud"></i> Cloud Native</span>
+        </div>
+
+        <div class="credentials-box">
+          <div class="cred-item">
+            <div class="cred-icon id-icon"><i class="fa-solid fa-id-card-clip"></i></div>
+            <div class="cred-info">
+              <span class="cred-label">STUDENT ID</span>
+              <span class="cred-val highlight-val">DIT2024172</span>
+            </div>
+          </div>
+
+          <div class="cred-item">
+            <div class="cred-icon course-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="cred-info">
+              <span class="cred-label">ASSIGNED COURSE</span>
+              <span class="cred-val">CTN (Container Technology)</span>
+            </div>
+          </div>
+
+          <div class="cred-item">
+            <div class="cred-icon user-icon"><i class="fa-solid fa-user-astronaut"></i></div>
+            <div class="cred-info">
+              <span class="cred-label">STUDENT NAME</span>
+              <span class="cred-val">SENG KOEMNAN</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="docker-status-footer">
+          <div class="spec-col">
+            <span class="spec-title">DEPLOYMENT</span>
+            <span class="spec-data"><i class="fa-solid fa-copy"></i> docker cp</span>
+          </div>
+          <div class="spec-divider"></div>
+          <div class="spec-col">
+            <span class="spec-title">BASE OS</span>
+            <span class="spec-data"><i class="fa-brands fa-linux"></i> Alpine 3.x</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- CENTER COLUMN: Bio Statement & Architecture Highlights -->
+      <section class="dash-card center-card">
+        <div class="card-header">
+          <div class="header-left">
+            <div class="header-icon-box">
+              <i class="fa-solid fa-quote-left"></i>
+            </div>
+            <div>
+              <h2 class="card-title">Professional Biography</h2>
+              <p class="card-subtitle">3-Sentence Academic & Career Statement</p>
+            </div>
+          </div>
+          <span class="chip-accent"><i class="fa-solid fa-bolt"></i> Verified Bio</span>
+        </div>
+
+        <div class="bio-timeline">
+          <div class="bio-step step-1">
+            <div class="step-marker">
+              <span class="marker-number">01</span>
+              <div class="marker-line"></div>
+            </div>
+            <div class="step-content">
+              <div class="step-header">
+                <span class="step-badge"><i class="fa-solid fa-graduation-cap"></i> Academic Identity</span>
+              </div>
+              <p class="step-text">
+                I am <strong>SENG KOEMNAN</strong>, an ambitious information technology student enrolled in the <strong>CTN (Container Technology)</strong> course, dedicated to mastering cloud virtualization and container ecosystems.
+              </p>
+            </div>
+          </div>
+
+          <div class="bio-step step-2">
+            <div class="step-marker">
+              <span class="marker-number">02</span>
+              <div class="marker-line"></div>
+            </div>
+            <div class="step-content">
+              <div class="step-header">
+                <span class="step-badge"><i class="fa-brands fa-docker"></i> Practical Competency</span>
+              </div>
+              <p class="step-text">
+                Through intensive hands-on labs with <strong>Docker containerization</strong>, image composition, and deployment isolation, I develop robust workflows to package and serve responsive applications.
+              </p>
+            </div>
+          </div>
+
+          <div class="bio-step step-3">
+            <div class="step-marker">
+              <span class="marker-number">03</span>
+            </div>
+            <div class="step-content">
+              <div class="step-header">
+                <span class="step-badge"><i class="fa-solid fa-rocket"></i> Career Vision</span>
+              </div>
+              <p class="step-text">
+                My overarching objective is to become a top-tier <strong>DevOps Engineer</strong>, orchestrating automated CI/CD pipelines and highly available cloud microservices across enterprise environments.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Metric Counters Row -->
+        <div class="metrics-row">
+          <div class="metric-box">
+            <span class="metric-num">100%</span>
+            <span class="metric-name">Docker Isolated</span>
+          </div>
+          <div class="metric-box">
+            <span class="metric-num">&lt; 15ms</span>
+            <span class="metric-name">Nginx Latency</span>
+          </div>
+          <div class="metric-box">
+            <span class="metric-num">30MB</span>
+            <span class="metric-name">Alpine Footprint</span>
+          </div>
+          <div class="metric-box">
+            <span class="metric-num">Port 8080</span>
+            <span class="metric-name">HTTP Binding</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- RIGHT COLUMN: Tech Stack & Live Container Shell Preview -->
+      <section class="dash-card right-card">
+        
+        <!-- Technical Competencies -->
+        <div class="sub-block skills-block">
+          <div class="card-header mini">
+            <div class="header-left">
+              <div class="header-icon-box cyan-box">
+                <i class="fa-solid fa-microchip"></i>
+              </div>
+              <h2 class="card-title">Technical Matrix</h2>
+            </div>
+            <span class="badge-mini">6 Core Tools</span>
+          </div>
+
+          <div class="tech-grid">
+            <div class="tech-card">
+              <i class="fa-brands fa-docker tech-icon docker-c"></i>
+              <div class="tech-info">
+                <span class="tech-name">Docker</span>
+                <span class="tech-level">Containers</span>
+              </div>
+            </div>
+
+            <div class="tech-card">
+              <i class="fa-solid fa-server tech-icon nginx-c"></i>
+              <div class="tech-info">
+                <span class="tech-name">Nginx</span>
+                <span class="tech-level">Web Proxy</span>
+              </div>
+            </div>
+
+            <div class="tech-card">
+              <i class="fa-brands fa-linux tech-icon linux-c"></i>
+              <div class="tech-info">
+                <span class="tech-name">Alpine OS</span>
+                <span class="tech-level">Linux Kernel</span>
+              </div>
+            </div>
+
+            <div class="tech-card">
+              <i class="fa-brands fa-html5 tech-icon html-c"></i>
+              <div class="tech-info">
+                <span class="tech-name">HTML5</span>
+                <span class="tech-level">Semantic</span>
+              </div>
+            </div>
+
+            <div class="tech-card">
+              <i class="fa-brands fa-css3-alt tech-icon css-c"></i>
+              <div class="tech-info">
+                <span class="tech-name">CSS3</span>
+                <span class="tech-level">Modern Flex</span>
+              </div>
+            </div>
+
+            <div class="tech-card">
+              <i class="fa-solid fa-terminal tech-icon cli-c"></i>
+              <div class="tech-info">
+                <span class="tech-name">Bash / CLI</span>
+                <span class="tech-level">Automation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Live Docker Terminal Window -->
+        <div class="sub-block terminal-block">
+          <div class="terminal-bar">
+            <div class="terminal-dots">
+              <span class="tdot red"></span>
+              <span class="tdot yellow"></span>
+              <span class="tdot green"></span>
+            </div>
+            <div class="terminal-title">
+              <i class="fa-brands fa-docker"></i> container: my-bio-site
+            </div>
+            <div class="terminal-badge">LIVE</div>
+          </div>
+          <div class="terminal-body">
+            <p class="term-line"><span class="t-prompt">$</span> <span class="t-cmd">docker ps --filter name=my-bio-site</span></p>
+            <p class="term-out t-sub">CONTAINER ID  IMAGE         STATUS        PORTS</p>
+            <p class="term-out t-highlight">731f505b544b  nginx:alpine  Up (healthy)  0.0.0.0:8080-&gt;80/tcp</p>
+            <p class="term-line"><span class="t-prompt">$</span> <span class="t-cmd">docker top my-bio-site</span></p>
+            <p class="term-out t-sub">PID   USER   TIME   COMMAND</p>
+            <p class="term-out">1     root   0:00   nginx: master process nginx -g daemon off;</p>
+            <p class="term-out">29    nginx  0:00   nginx: worker process</p>
+            <p class="term-line blink-line"><span class="t-prompt">$</span> <span class="t-cursor">_</span></p>
+          </div>
+        </div>
+
+      </section>
+
+    </main>
+
+    <!-- Bottom Status Bar -->
+    <footer class="bottom-bar">
+      <div class="bot-left">
+        <span class="dot-live"></span>
+        <span>Connected to <strong>http://localhost:8080</strong> &middot; Web Injection Verified</span>
+      </div>
+      <div class="bot-right">
+        <span>Student: <strong>SENG KOEMNAN</strong> (DIT2024172) &middot; Course: <strong>CTN</strong> &copy; 2024</span>
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+</html>
